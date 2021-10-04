@@ -1,6 +1,20 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
-  //your code here
+
+  int num;
+
+  cout << "Enter Number To Find Multiplication table: ";
+
+  cin >> num;
+
+  for (int a = 1; a <= 10; a++)
+
+  {
+
+    cout << num << " * " << a << " = " << num * a << endl;
+  }
+
+  return 0;
 }
