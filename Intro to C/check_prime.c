@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 int main() {
   int n, i, flag = 0;
@@ -24,3 +25,5 @@ int main() {
 
   return 0;
 }
+
+
