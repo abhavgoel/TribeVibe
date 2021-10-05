@@ -1,0 +1,37 @@
+import jupyterlab
+import selenium
+from selenium import webdriver
+driver = webdriver.Firefox()
+driver.get("https://www.facebook.com/")
+firstname = driver.find_element_by_id("u_0_m")
+firstname.send_keys("") #Enter your name
+surname = driver.find_element_by_id("u_0_o")
+surname.send_keys("") #Enter your name
+mobile_no = driver.find_element_by_id("u_0_r")
+mobile_no.send_keys("") #Enter your phone number
+password = driver.find_element_by_id("password_step_input")
+password.send_keys("") #Enter your password
+dobday = driver.find_element_by_id("day")
+dobday.send_keys("17") #Enter your DOB only date
+dobmonth = driver.find_element_by_id("month") 
+dobmonth.send_keys("Jul") #Enter your DOB only month
+dobyear = driver.find_element_by_id("year")
+dobyear.send_keys("2002") #Enter your DOB only year
+
+
+gender = int(input("Enter your number:"))
+if gender == 1:   #female
+    gender = driver.find_element_by_id("u_0_6")
+    gender.click()
+elif gender == 2: #male
+    gender = driver.find_element_by_id("u_0_7")
+    gender.click()
+elif gender == 3:              #custom
+    gender = driver.find_element_by_id("u_0_8")
+    gender.click()
+    
+    
+signup = driver.find_element_by_id("u_0_13")
+signup.click()
+
+
