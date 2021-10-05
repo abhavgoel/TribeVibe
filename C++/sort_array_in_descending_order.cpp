@@ -3,7 +3,8 @@ using namespace std;
   
 int main()
 {
-    int arr[] = { 1, 45, 54, 71, 76, 12 };
+    //input string
+    int arr[] = { 1, 45, 55, 71, 76, 13 };
   
    
     int n = sizeof(arr) / sizeof(arr[0]);
