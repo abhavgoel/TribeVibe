@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+echo "Boilerplate code Bash"
+var=" Committed by arjundv24"
+echo $var
