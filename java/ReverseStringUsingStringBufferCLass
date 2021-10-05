@@ -1,0 +1,12 @@
+import java.util.*;
+class abc{
+public static void main(String[] args){
+
+String str;
+Scanner sc=new Scanner(System.in);
+str=sc.next();
+StringBuffer sb=new StringBuffer(str);
+sb.reverse();
+System.out.print(sb);
+}
+}
