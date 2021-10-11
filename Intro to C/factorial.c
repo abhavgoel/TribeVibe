@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-  int a, i, fact=1;
+  int n, i, fact=1;
 	
-	printf("Enter Any Number: ");
-	scanf("%d",&a);
+	printf("Enter Any Number: "\n);
+	scanf("%d",&n);
 	
 	for(i=1; i<=a; i++){
 		fact = fact*i;
