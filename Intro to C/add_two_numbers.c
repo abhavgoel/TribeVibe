@@ -1,8 +1,11 @@
 #include<stdio.h>
 int main()
 {
-  float a,b;
-  scanf("%f",&a);
-  scanf("%f",&b);
-  printf("Sum is %f",a+b);
+    int a,b,c;
+    printf ("enter the value of a and b");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    c=a+b;
+    printf("sum=%d",c);
+    return 0
 }
