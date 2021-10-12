@@ -1,10 +1,20 @@
+rev_num = 0
+base_pos = 1
 
-num = input("enter your number")                          #Taking number from user
-reversed_num = 0
+# Recursive function to reverse
+# digits of num
 
-while num != 0:                                            #while loop is used here
-    digit = num % 10                                       # '%' operator finds modulus(remainder)  
-    reversed_num = reversed_num * 10 + digit
-    num //= 10
 
-print("Reversed Number: " + str(reversed_num))
+def reversDigits(num):
+	global rev_num
+	global base_pos
+	if(num > 0):
+		reversDigits((int)(num / 10))
+		rev_num += (num % 10) * base_pos
+		base_pos *= 10
+	return rev_num
+
+
+# Driver Code
+num = int(input('enter number you want to reverse'))
+print("Reverse of no. is ",reversDigits(num))
