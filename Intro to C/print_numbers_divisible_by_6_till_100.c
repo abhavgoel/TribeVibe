@@ -1,5 +1,6 @@
 #include<stdio.h>
 int main()
-{
-  //your code here
+{ for(int i=6;i<=100;i=i+6)
+  printf("%d\n",i);
 }
+
