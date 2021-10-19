@@ -15,7 +15,7 @@ public class armstrong {
            n=n/10;
         }
         n=a;
-        while()
+        while(n!=0)
         {
             b=n%10;
             s=s+Math.pow(b,c);
